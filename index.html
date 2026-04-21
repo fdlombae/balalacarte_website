@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balalacarte — Choose Your Dance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bordeaux: {
+                            DEFAULT: '#722F37',
+                            light: '#8B3A42',
+                            dark: '#5C252C',
+                            pale: '#F5E6E8',
+                        },
+                        cream: '#FFF8F0',
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['"Inter"', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .ornament { opacity: 0.4; letter-spacing: 0.5rem; }
+
+        .collage-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-cream text-bordeaux-dark font-body">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full bg-cream/90 backdrop-blur-sm z-50 border-b border-bordeaux/10">
+        <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
+            <a href="#" class="font-display text-2xl font-bold text-bordeaux">Balalacarte</a>
+            <div class="hidden sm:flex gap-8 text-sm font-medium">
+                <a href="#concept" class="hover:text-bordeaux transition-colors">Concept</a>
+                <a href="#how-it-works" class="hover:text-bordeaux transition-colors">How It Works</a>
+                <a href="#april17" class="hover:text-bordeaux transition-colors">17 April</a>
+                <a href="#about" class="hover:text-bordeaux transition-colors">About</a>
+                <a href="#contact" class="hover:text-bordeaux transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="min-h-screen flex items-center justify-center text-center px-6 pt-20">
+        <div class="max-w-3xl">
+            <p class="ornament font-display text-bordeaux text-2xl mb-4">&#9833; &#9834; &#9835;</p>
+            <h1 class="font-display text-5xl sm:text-7xl font-900 text-bordeaux leading-tight mb-6">
+                Balalacarte
+            </h1>
+            <p class="text-xl sm:text-2xl font-display italic text-bordeaux-light mb-8">
+                The folkband where <em>you</em> choose what's played next.
+            </p>
+            <p class="text-lg text-bordeaux-dark/70 max-w-xl mx-auto mb-10">
+                Vote on tablets, watch the results light up the stage, and dance to the music you picked — all night long.
+            </p>
+            <a href="#concept" class="inline-block bg-bordeaux text-cream px-8 py-3 rounded-full font-semibold hover:bg-bordeaux-dark transition-colors">
+                Discover how it works
+            </a>
+        </div>
+    </header>
+
+    <!-- Concept -->
+    <section id="concept" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <p class="ornament font-display text-center text-bordeaux mb-2">&#10045; &#10045; &#10045;</p>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-bordeaux text-center mb-16">
+                A Setlist Made by the Crowd
+            </h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white border-2 border-bordeaux rounded-lg p-8 text-center">
+                    <div class="text-4xl mb-4">&#128499;</div>
+                    <h3 class="font-display text-xl font-bold text-bordeaux mb-3">Vote</h3>
+                    <p class="text-bordeaux-dark/70">Tablets hang from the ceiling around the venue. Pick the next dance style — Waltz, Polka, Mazurka, Jig, Branles and more.</p>
+                </div>
+                <div class="bg-white border-2 border-bordeaux rounded-lg p-8 text-center">
+                    <div class="text-4xl mb-4">&#128253;</div>
+                    <h3 class="font-display text-xl font-bold text-bordeaux mb-3">Watch</h3>
+                    <p class="text-bordeaux-dark/70">Votes are projected live on a screen behind the musicians. See the bars fill up in real time as the crowd decides.</p>
+                </div>
+                <div class="bg-white border-2 border-bordeaux rounded-lg p-8 text-center">
+                    <div class="text-4xl mb-4">&#128131;</div>
+                    <h3 class="font-display text-xl font-bold text-bordeaux mb-3">Dance</h3>
+                    <p class="text-bordeaux-dark/70">The winning dance is announced, the band launches into it, and the floor comes alive. Then you vote again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-24 px-6 bg-bordeaux-pale/50">
+        <div class="max-w-3xl mx-auto">
+            <p class="ornament font-display text-center text-bordeaux mb-2">&#10047; &#10047; &#10047;</p>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-bordeaux text-center mb-16">
+                How It Works
+            </h2>
+            <ol class="space-y-10">
+                <li class="flex gap-6 items-start">
+                    <span class="shrink-0 w-10 h-10 rounded-full bg-bordeaux text-cream flex items-center justify-center font-bold text-lg">1</span>
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-bordeaux mb-1">Tablets descend</h3>
+                        <p class="text-bordeaux-dark/70">During the current dance, tablets hanging from the ceiling light up with a menu of dance options.</p>
+                    </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                    <span class="shrink-0 w-10 h-10 rounded-full bg-bordeaux text-cream flex items-center justify-center font-bold text-lg">2</span>
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-bordeaux mb-1">The audience votes</h3>
+                        <p class="text-bordeaux-dark/70">Everyone taps their favourite dance. One vote per person, per round — fair and simple.</p>
+                    </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                    <span class="shrink-0 w-10 h-10 rounded-full bg-bordeaux text-cream flex items-center justify-center font-bold text-lg">3</span>
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-bordeaux mb-1">Results go live on stage</h3>
+                        <p class="text-bordeaux-dark/70">A big screen behind the band shows vote bars climbing in real time — the suspense is part of the show.</p>
+                    </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                    <span class="shrink-0 w-10 h-10 rounded-full bg-bordeaux text-cream flex items-center justify-center font-bold text-lg">4</span>
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-bordeaux mb-1">The band plays the winner</h3>
+                        <p class="text-bordeaux-dark/70">Voting closes, the winner is revealed, and the musicians kick off the chosen dance. Every set is unique.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 17 April Edition -->
+    <section id="april17" class="relative overflow-hidden bg-bordeaux-dark">
+        <!-- Video background -->
+        <video class="collage-video opacity-60" autoplay muted loop playsinline>
+            <source src="assets/collage_horizontal.mp4" type="video/mp4">
+        </video>
+        <!-- Text overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-bordeaux-dark/30">
+            <div class="text-center px-6">
+                <p class="text-cream/70 font-display text-lg mb-2">Latest Edition</p>
+                <h2 class="font-display text-4xl sm:text-6xl font-bold text-cream drop-shadow-lg mb-4">Boombal - 17 April 2026</h2>
+                <p class="text-cream/80 text-sm">
+                    Every face you see scrolling by chose what the band played next.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="ornament font-display text-bordeaux mb-2">&#9833; &#9834; &#9835;</p>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-bordeaux mb-8">
+                About Balalacarte
+            </h2>
+            <p class="text-lg text-bordeaux-dark/70 mb-6">
+                Balalacarte is a folk band that believes the best dance nights are the ones shaped by the dancers themselves. Armed with accordion, guitar, bass, drums and a custom-built voting system, we turn every gig into a collaborative experience where the audience drives the setlist.
+            </p>
+            <p class="text-lg text-bordeaux-dark/70">
+                No two shows are ever the same — because no two crowds are ever the same.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact / Book -->
+    <section id="contact" class="py-24 px-6 bg-bordeaux text-cream">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="ornament text-cream/40 font-display mb-2">&#10045; &#10045; &#10045;</p>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6">
+                Book Balalacarte
+            </h2>
+            <p class="text-cream/80 text-lg mb-10">
+                Festivals, Balfolk evenings, weddings, private parties — wherever people want to dance, we'll bring the vote.
+            </p>
+            <a href="mailto:info@balalacarte.be" class="inline-block border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-cream hover:text-bordeaux transition-colors">
+                info@balalacarte.be
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bordeaux-dark text-cream/60 text-sm text-center py-8 px-6">
+        <p class="font-display text-cream/80 text-lg mb-2">Balalacarte</p>
+        <p>&copy; 2026 Balalacarte. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
